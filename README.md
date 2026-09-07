@@ -15,7 +15,7 @@ Android instrument tuner with live chromatic spectrogram and radial visualizatio
 - Room-noise calibration and optional noise suppression.
 - On-device performance display.
 
-Microphone permission is required. The app processes audio locally and does not require an account or API key.
+Microphone permission is required. The app processes audio locally.
 
 ## Download
 
