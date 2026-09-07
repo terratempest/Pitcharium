@@ -37,24 +37,3 @@ The application ID is `com.pitcharium`. Install on a selected device with:
 adb -s <device-serial> install -r app/build/outputs/apk/debug/app-debug.apk
 adb -s <device-serial> shell am start -n com.pitcharium/.TunerActivity
 ```
-
-Release builds are unsigned by default. Use Android Studio's **Generate Signed App Bundle or APK** to sign a distribution build with your own key. Keep signing keys and credentials outside version control.
-
-## Validation
-
-```powershell
-.\gradlew.bat :app:assembleDebug :app:lintDebug
-```
-
-A standalone check covers the performance statistics calculations. With `kotlinc` on your path, create the ignored `build` directory and run:
-
-```text
-kotlinc app/src/main/java/com/pitcharium/PerformanceStats.kt tests/PerformanceStatsCheck.kt -include-runtime -d build/performance-stats-check.jar
-java -jar build/performance-stats-check.jar
-```
-
-On a device, check microphone permission, each visualization, instrument tuning, recording start/stop, and room-noise calibration. Emulator checks cover UI and integration; pitch accuracy and microphone calibration require physical-device measurements.
-
-## License
-
-[MIT](LICENSE), copyright 2026 Terra. Third-party build tools and libraries retain their own licenses.
