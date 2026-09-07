@@ -2,6 +2,12 @@
 
 Android instrument tuner with live chromatic spectrogram and radial visualizations. Kotlin and Jetpack Compose provide the interface; a native C++ engine processes microphone audio on the device.
 
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/5b2d820d-1acb-4625-acdb-05550014c3be" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/f8fd87a0-8b14-407e-ba04-9781a6343077" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/b663509b-ec17-4227-91d6-ca0978f913de" />
+
+
+
 ## Features
 
 - Live pitch, note, octave, and cents deviation.
